@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark-blue">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Satria Nurulloh (DevTria) | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio Muhammad Satria Nurulloh (DevTria) - Full-Stack Developer & Problem Solver spesialis PHP, Laravel 11, dan MySQL Database Architecture.">
+  <meta name="keywords" content="Muhammad Satria Nurulloh, DevTria, Full-Stack Developer, Laravel 11, PHP, MySQL, Portfolio Web Developer">
+  <meta name="author" content="Muhammad Satria Nurulloh">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:title" content="Muhammad Satria Nurulloh (DevTria) - Full-Stack Developer">
+  <meta property="og:description" content="Full-Stack Developer & Problem Solver. Critical Thinker fokus pada perancangan logika solid dan solusi nyata bisnis.">
+  <meta property="og:image" content="assets/images/profile-1.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon SVG Data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230f1c3d'/><text x='50%' y='58%' font-family='sans-serif' font-weight='bold' font-size='50' fill='%2338bdf8' text-anchor='middle' dominant-baseline='middle'>D</text></svg>">
+</head>
+<body data-theme="dark-blue">
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- ==========================================================================
+       NAVBAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-logo" aria-label="DevTria Home">
+        <span class="logo-icon">D</span>
+        <span>DevTria<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Items: Theme Switcher & Mobile Menu Toggle -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-switch-btn" aria-label="Ganti ke Tema Terang" title="Ganti ke Tema Terang (Shortcut: Alt+T)">
+          <!-- Moon Icon (Shown in Dark Blue theme) -->
+          <svg class="theme-icon-moon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Shown in Light theme) -->
+          <svg class="theme-icon-sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- CTA Direct Contact Button in Navbar -->
+        <a href="https://wa.me/6288976064734?text=Halo%20Satria,%20saya%20melihat%20portfolio%20Anda%20dan%20tertarik%20berkolaborasi" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="display: none;" id="nav-cta-btn">
+          Chat WA
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content">
+            <!-- Open For Work Status Badge -->
+            <div class="status-badge">
+              <span class="pulse-dot"></span>
+              <span>Terbuka untuk Freelance, Full-Time & Part-Time</span>
+            </div>
+
+            <p class="hero-title-greeting">Hi there 👋, I'm</p>
+            <h1 class="hero-name">Muhammad <span class="gradient-text">Satria Nurulloh</span></h1>
+
+            <!-- Dynamic Role Typing Subtitle -->
+            <div class="hero-role-wrapper">
+              <span>Peran:</span>
+              <span id="typed-role" class="typed-text">Full-Stack Developer</span>
+              <span class="cursor-blink"></span>
+            </div>
+
+            <!-- Mindset Callout Card (From Github Readme) -->
+            <div class="hero-mindset">
+              <div class="hero-mindset-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 16v-4"></path>
+                  <path d="M12 8h.01"></path>
+                </svg>
+                Mindset Developer
+              </div>
+              <p class="hero-mindset-text">
+                <strong>Critical Thinker</strong> — fokus pada perancangan logika yang solid dan solusi nyata yang berdampak langsung pada kelancaran operasional bisnis.
+              </p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+              <a href="https://wa.me/6288976064734?text=Halo%20Satria,%20saya%20tertarik%20bekerjasama%20dengan%20Anda" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <!-- WhatsApp SVG -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.652c1.746.951 3.71 1.452 5.711 1.453h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
+                </svg>
+                <span>WhatsApp Langsung</span>
+              </a>
+
+              <a href="#projects" class="btn btn-secondary">
+                <span>Lihat Proyek</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"></path>
+                </svg>
+              </a>
+
+              <a href="mailto:satria.nurulloh.creative.@gmail.com" class="btn btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email</span>
+              </a>
+            </div>
+
+            <!-- Social Media Profile Links -->
+            <div class="hero-socials">
+              <span class="hero-socials-label">Terhubung:</span>
+              
+              <!-- GitHub -->
+              <a href="https://github.com/devtria" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub: github.com/devtria" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/devtria249?cplk=MW9sdXJ0MTdpY3E0dA==" target="_blank" rel="noopener noreferrer" class="social-pill" title="Instagram: @devtria249" aria-label="Instagram Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://www.youtube.com/@DevTria" target="_blank" rel="noopener noreferrer" class="social-pill" title="YouTube: @DevTria" aria-label="YouTube Channel">
+                <svg viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+
+              <!-- WhatsApp Icon -->
+              <a href="https://wa.me/6288976064734" target="_blank" rel="noopener noreferrer" class="social-pill" title="WhatsApp: 088976064734" aria-label="WhatsApp Chat">
+                <svg viewBox="0 0 24 24">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Showcase (Dual Instagram Photos) -->
+          <div class="hero-visual">
+            <div class="profile-card-wrapper">
+              <!-- Floating Tech Chips -->
+              <div class="floating-chip chip-php">
+                <span>🐘 PHP 8+</span>
+              </div>
+              <div class="floating-chip chip-laravel">
+                <span>🔥 Laravel 11</span>
+              </div>
+              <div class="floating-chip chip-mysql">
+                <span>🗄️ MySQL</span>
+              </div>
+
+              <!-- Main Profile Card -->
+              <div class="profile-card">
+                <div class="profile-image-container" title="Klik untuk melihat foto lebih besar">
+                  <!-- Photo 1 (Instagram Post 1) -->
+                  <img src="assets/images/profile-1.jpg" alt="Muhammad Satria Nurulloh (Foto 1)" class="profile-img active" id="profile-img-1" loading="eager">
+                  <!-- Photo 2 (Instagram Post 2) -->
+                  <img src="assets/images/profile-2.jpg" alt="Muhammad Satria Nurulloh (Foto 2)" class="profile-img inactive" id="profile-img-2" loading="lazy">
+
+                  <!-- Interactive Switcher Buttons -->
+                  <div class="photo-switch-controls">
+                    <button class="photo-switch-btn active" id="photo-btn-1" aria-label="Tampilkan Foto 1">Foto 1</button>
+                    <button class="photo-switch-btn" id="photo-btn-2" aria-label="Tampilkan Foto 2">Foto 2</button>
+                  </div>
+                </div>
+
+                <!-- Instagram Post Attribution Link -->
+                <a href="https://www.instagram.com/p/DfPTfozBvj5/?psln=MW41cXVqa3A5NW1sYg==" target="_blank" rel="noopener noreferrer" class="profile-badge-link" id="profile-ig-link">
+                  <span class="link-text">Buka Foto 1 di Instagram</span>
+                  <svg viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01. Tentang Saya</span>
+          <h2 class="section-title">Logika yang Terukur, Solusi yang Berdampak</h2>
+          <p class="section-subtitle">Membangun sistem perangkat lunak yang andal dengan perancangan arsitektur yang solid dari hulu ke hilir.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative & Mindset -->
+          <div class="about-card">
+            <h3 style="font-size: 1.45rem; margin-bottom: 1.2rem;">Full-Stack Developer & Problem Solver</h3>
+            
+            <p class="about-paragraph">
+              Saya adalah seorang <strong>Full-Stack Developer</strong> yang mengedepankan pendekatan <em>critical thinking</em>. Bagi saya, pemrograman bukan hanya sekadar menulis sintaks, melainkan seni merancang struktur logika dan alur data yang mampu memecahkan permasalahan operasional riil di lapangan.
+            </p>
+
+            <p class="about-paragraph">
+              Dalam setiap proyek, alur kerja saya berakar pada <strong>research-driven development</strong>. Saya terbiasa mendalami dokumentasi resmi, menguji skenario batas (<em>edge cases</em>), serta menerapkan praktik terbaik untuk memastikan kode yang dihasilkan tetap bersih, modular, dan mudah dipelihara (<em>clean & maintainable code</em>).
+            </p>
+
+            <!-- Featured Quote from GitHub Readme -->
+            <div class="quote-box">
+              <blockquote>
+                "Code is like humor. When you have to explain it, it’s bad."
+              </blockquote>
+              <span class="quote-author">— Muhammad Satria Nurulloh (DevTria)</span>
+            </div>
+
+            <p class="about-paragraph">
+              Saat ini, saya terbuka untuk peluang kolaborasi proyek, pekerjaan <strong>Freelance</strong>, <strong>Full-Time</strong>, maupun <strong>Part-Time</strong>.
+            </p>
+          </div>
+
+          <!-- Right: 4 Core Pillars -->
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Critical Thinker</h4>
+              <p class="pillar-desc">Merumuskan kebutuhan bisnis ke dalam arsitektur logika perangkat lunak yang tangguh dan teruji.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Database Architect</h4>
+              <p class="pillar-desc">Perancangan skema MySQL ternormalisasi, efisiensi query, dan integrasi mulus dengan Eloquent ORM.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Research-Driven</h4>
+              <p class="pillar-desc">Eksplorasi dokumentasi resmi dan studi kasus praktis demi menghasilkan standar kode berkualitas tinggi.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Operational Impact</h4>
+              <p class="pillar-desc">Fokus pada hasil akhir yang nyata membantu merapikan pencatatan dan otomatisasi alur kerja harian.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECH STACK & SKILLS SECTION
+         ========================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02. Tech Stack & Keahlian</span>
+          <h2 class="section-title">Teknologi yang Dikuasai</h2>
+          <p class="section-subtitle">Kombinasi teknologi modern untuk menghadirkan sistem web dan backend yang cepat, aman, dan skalabel.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Backend & Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Backend & Bahasa</h3>
+                <span class="skill-cat-subtitle">Logic & Frameworks</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="tag-dot"></span>PHP 8+</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Laravel 11</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Eloquent ORM</span>
+              <span class="skill-tag"><span class="tag-dot"></span>RESTful API</span>
+              <span class="skill-tag"><span class="tag-dot"></span>MVC Pattern</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Authentication</span>
+            </div>
+
+            <div class="skill-notes">
+              Penerapan arsitektur controller, service layer, middleware, dan pengelolaan rute yang aman serta terstruktur di Laravel 11.
+            </div>
+          </div>
+
+          <!-- Category 2: Database & Architecture -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Database & Modeling</h3>
+                <span class="skill-cat-subtitle">Data Integrity & Schema</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="tag-dot"></span>MySQL</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Schema Optimization</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Relational Modeling</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Database Normalization</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Migrations & Seeders</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Query Optimization</span>
+            </div>
+
+            <div class="skill-notes">
+              Menyelaraskan struktur tabel dengan dinamika operasional lapangan untuk menjamin integritas data dan performa query yang optimal.
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend & Mobile Tools -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Frontend & Workflow</h3>
+                <span class="skill-cat-subtitle">UI, Mobile & Development</span>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="tag-dot"></span>HTML5 Semantic</span>
+              <span class="skill-tag"><span class="tag-dot"></span>CSS3 & Flex/Grid</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Vanilla JavaScript</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Dart & Flutter</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Git & GitHub</span>
+              <span class="skill-tag"><span class="tag-dot"></span>Postman</span>
+            </div>
+
+            <div class="skill-notes">
+              Pengembangan antarmuka responsif tanpa dependensi berlebih, alur version control rapi, serta pengujian endpoint API.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03. Portofolio & Proyek</span>
+          <h2 class="section-title">Karya & Solusi Rekayasa</h2>
+          <p class="section-subtitle">Studi kasus nyata yang mendemonstrasikan penyelesaian tantangan operasional melalui arsitektur perangkat lunak.</p>
+        </div>
+
+        <!-- FLAGSHIP FEATURED PROJECT: Sistem Manajemen Antrian Servis HP -->
+        <div class="featured-project-card">
+          <div class="project-flagship-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            Featured Project • Flagship
+          </div>
+
+          <h3 class="project-title">Sistem Manajemen Antrian Servis HP</h3>
+
+          <div class="project-tech-pills">
+            <span class="tech-pill">PHP</span>
+            <span class="tech-pill">Laravel 11</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">Eloquent ORM</span>
+            <span class="tech-pill">Database Normalization</span>
+            <span class="tech-pill">Full-Stack Solution</span>
+          </div>
+
+          <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            Aplikasi manajemen alur kerja dan antrian untuk usaha servis perangkat seluler, dirancang khusus untuk merapikan pencatatan status perbaikan, penugasan teknisi, serta menghadirkan transparansi operasional harian bagi pemilik bisnis dan pelanggan.
+          </p>
+
+          <!-- Problem vs Solution Deep Dive -->
+          <div class="project-deep-dive">
+            <!-- The Challenge -->
+            <div class="dive-box challenge">
+              <div class="dive-box-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                Tantangan Utama
+              </div>
+              <p>
+                Memastikan struktur data dan tabel di MySQL benar-benar selaras dengan dinamika operasional di lapangan — mencakup kebutuhan riil terkait status servis dinamis, tracking teknisi penanggung jawab, riwayat perbaikan pelanggan, dan data suku cadang secara akurat.
+              </p>
+            </div>
+
+            <!-- The Solution -->
+            <div class="dive-box solution">
+              <div class="dive-box-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Solusi Rekayasa
+              </div>
+              <p>
+                Melakukan <em>deep requirement analysis</em> dan menerjemahkannya ke dalam relasi database relasional yang normal, fleksibel, serta efisien menggunakan fitur migrasi terstruktur dan relasi Eloquent ORM di Laravel 11 sehingga status servis terpantau transparan dan bebas redudansi data.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://wa.me/6288976064734?text=Halo%20Satria,%20saya%20tertarik%20dengan%20proyek%20Sistem%20Manajemen%20Antrian%20Servis%20HP" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.652c1.746.951 3.71 1.452 5.711 1.453h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
+              </svg>
+              <span>Diskusi Proyek via WhatsApp</span>
+            </a>
+
+            <a href="https://github.com/devtria" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>Lihat Repositori GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- OTHER NOTABLE PROJECTS (From GitHub) -->
+        <div class="projects-grid">
+          <!-- Project 2: Dart Cashier System -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-folder-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <a href="https://github.com/devtria/dart-week-2-cashier" target="_blank" rel="noopener noreferrer" title="Buka GitHub" aria-label="Buka Repo Cashier">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <h4 class="project-card-title">Aplikasi Kasir (Cashier Logic)</h4>
+            <p class="project-card-desc">
+              Sistem kalkulasi transaksi kasir dan manajemen struk belanja dengan penanganan alur diskon, input kuantitas, dan validasi total pembayaran secara presisi.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-lang"><span class="lang-dot"></span>Dart</span>
+              <a href="https://github.com/devtria/dart-week-2-cashier" target="_blank" rel="noopener noreferrer">devtria/dart-week-2-cashier</a>
+            </div>
+          </div>
+
+          <!-- Project 3: Library Loan Validation -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-folder-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <a href="https://github.com/devtria/dart-week-3-validasi-peminjaman-buku" target="_blank" rel="noopener noreferrer" title="Buka GitHub" aria-label="Buka Repo Validasi Peminjaman">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <h4 class="project-card-title">Validasi Peminjaman Buku</h4>
+            <p class="project-card-desc">
+              Implementasi logika validasi aturan bisnis peminjaman buku perpustakaan, kalkulasi tenggat waktu pengembalian, dan mitigasi pelanggaran denda keterlambatan.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-lang"><span class="lang-dot"></span>Dart</span>
+              <a href="https://github.com/devtria/dart-week-3-validasi-peminjaman-buku" target="_blank" rel="noopener noreferrer">devtria/dart-week-3-validasi...</a>
+            </div>
+          </div>
+
+          <!-- Project 4: PHP Database CRUD System -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-folder-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <a href="https://github.com/devtria/php-crud" target="_blank" rel="noopener noreferrer" title="Buka GitHub" aria-label="Buka Repo PHP CRUD">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <h4 class="project-card-title">PHP Modular CRUD Engine</h4>
+            <p class="project-card-desc">
+              Modul operasi CRUD (Create, Read, Update, Delete) berbasis PHP native dengan koneksi database MySQL terstruktur dan antarmuka responsif.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-lang"><span class="lang-dot"></span>PHP & CSS</span>
+              <a href="https://github.com/devtria/php-crud" target="_blank" rel="noopener noreferrer">devtria/php-crud</a>
+            </div>
+          </div>
+
+          <!-- Project 5: Mobile Apps & Flutter Ecosystem -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-folder-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <a href="https://github.com/devtria/dart-aplikasi-mobile" target="_blank" rel="noopener noreferrer" title="Buka GitHub" aria-label="Buka Repo Mobile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <h4 class="project-card-title">Aplikasi Mobile & Flutter</h4>
+            <p class="project-card-desc">
+              Rangkaian proyek eksplorasi mobile cross-platform menggunakan Flutter dan Dart, berfokus pada hierarki widget, state management, dan layout adaptif.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-lang"><span class="lang-dot"></span>Dart & Flutter</span>
+              <a href="https://github.com/devtria/dart-aplikasi-mobile" target="_blank" rel="noopener noreferrer">devtria/dart-aplikasi-mobile</a>
+            </div>
+          </div>
+
+          <!-- Project 6: Vibe Coding & Modern Web Tooling -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-folder-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <a href="https://github.com/devtria/belajar-vibe-coding" target="_blank" rel="noopener noreferrer" title="Buka GitHub" aria-label="Buka Repo Vibe Coding">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <h4 class="project-card-title">Modern Web & Vibe Coding</h4>
+            <p class="project-card-desc">
+              Eksplorasi metodologi rekayasa perangkat lunak modern, adopsi tool canggih, dan optimasi kecepatan iterasi prototipe aplikasi berbasis web.
+            </p>
+            <div class="project-card-footer">
+              <span class="project-card-lang"><span class="lang-dot"></span>TypeScript / Web</span>
+              <a href="https://github.com/devtria/belajar-vibe-coding" target="_blank" rel="noopener noreferrer">devtria/belajar-vibe-coding</a>
+            </div>
+          </div>
+
+          <!-- Project 7: View all on GitHub card -->
+          <div class="project-card" style="border-style: dashed; justify-content: center; text-align: center; align-items: center;">
+            <div class="project-folder-icon" style="margin-bottom: 1rem;">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <h4 class="project-card-title" style="margin-bottom: 0.5rem;">Lihat Proyek Lainnya</h4>
+            <p class="project-card-desc" style="margin-bottom: 1.2rem;">
+              Temukan seluruh repositori kode, eksplorasi eksperimental, dan kontribusi saya di GitHub.
+            </p>
+            <a href="https://github.com/devtria" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              Buka GitHub @devtria
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04. Hubungi Saya</span>
+          <h2 class="section-title">Mari Terhubung & Berkolaborasi</h2>
+          <p class="section-subtitle">Punya proyek, peluang kerja freelance, full-time, part-time, atau ingin mendiskusikan ide? Hubungi saya kapan saja!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Information Cards -->
+          <div class="contact-info-list">
+            <!-- WhatsApp -->
+            <div class="contact-card-item">
+              <div class="contact-item-left">
+                <div class="contact-icon-box" style="color: #22c55e;">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">WhatsApp / Telepon</div>
+                  <div class="contact-item-value">088976064734</div>
+                </div>
+              </div>
+              <div class="contact-actions-inline">
+                <button class="btn-copy" data-copy="088976064734" title="Salin nomor WhatsApp">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+                <a href="https://wa.me/6288976064734" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  Chat WA
+                </a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card-item">
+              <div class="contact-item-left">
+                <div class="contact-icon-box" style="color: #38bdf8;">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" fill="none"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Email Resmi</div>
+                  <div class="contact-item-value" style="font-size: 0.88rem; word-break: break-all;">satria.nurulloh.creative.@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact-actions-inline">
+                <button class="btn-copy" data-copy="satria.nurulloh.creative.@gmail.com" title="Salin alamat email">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+                <a href="mailto:satria.nurulloh.creative.@gmail.com" class="btn btn-secondary btn-sm">
+                  Kirim
+                </a>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card-item">
+              <div class="contact-item-left">
+                <div class="contact-icon-box" style="color: var(--text-primary);">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">GitHub</div>
+                  <div class="contact-item-value">github.com/devtria</div>
+                </div>
+              </div>
+              <a href="https://github.com/devtria" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                Lihat Profil
+              </a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="contact-card-item">
+              <div class="contact-item-left">
+                <div class="contact-icon-box" style="color: #ec4899;">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">Instagram</div>
+                  <div class="contact-item-value">@devtria249</div>
+                </div>
+              </div>
+              <a href="https://www.instagram.com/devtria249?cplk=MW9sdXJ0MTdpY3E0dA==" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                Follow IG
+              </a>
+            </div>
+
+            <!-- YouTube -->
+            <div class="contact-card-item">
+              <div class="contact-item-left">
+                <div class="contact-icon-box" style="color: #ef4444;">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-item-label">YouTube</div>
+                  <div class="contact-item-value">@DevTria</div>
+                </div>
+              </div>
+              <a href="https://www.youtube.com/@DevTria" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                Tonton Video
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Quick Message Dispatcher -->
+          <div class="contact-form-card">
+            <h3 class="contact-form-title">Kirim Pesan Langsung</h3>
+            <p class="contact-form-desc">Isi form di bawah ini untuk mengirim pesan instan via WhatsApp atau Email.</p>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nama Anda *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="contoh: Budi Santoso" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-info" class="form-label">Email / No WhatsApp Anda</label>
+                <input type="text" id="contact-info" class="form-input" placeholder="contoh: budi@gmail.com / 08123456789">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subjek Proyek</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="contoh: Penawaran Proyek Laravel & Database">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Pesan Anda *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tuliskan detail kebutuhan atau pertanyaan Anda di sini..." required></textarea>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="button" id="send-wa-btn" class="btn btn-primary" style="flex: 1;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.652c1.746.951 3.71 1.452 5.711 1.453h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
+                  </svg>
+                  <span>Kirim via WA</span>
+                </button>
+
+                <button type="button" id="send-email-btn" class="btn btn-secondary" style="flex: 1;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Kirim via Email</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="brand-logo" style="font-size: 1.15rem; margin-bottom: 0.2rem;">
+          <span class="logo-icon" style="width: 28px; height: 28px; font-size: 0.9rem;">D</span>
+          <span>DevTria.</span>
+        </div>
+        <p class="footer-copy">© 2026 Muhammad Satria Nurulloh. All rights reserved.</p>
+        <p class="footer-quote">"Code is like humor. When you have to explain it, it’s bad."</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Beranda</a>
+        <a href="#about" class="footer-link">Tentang</a>
+        <a href="#skills" class="footer-link">Keahlian</a>
+        <a href="#projects" class="footer-link">Proyek</a>
+        <a href="#contact" class="footer-link">Kontak</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL PHOTO VIEWER
+       ========================================================================== -->
+  <div class="modal-overlay" id="photo-modal" role="dialog" aria-modal="true" aria-label="Lihat Foto Profil">
+    <div class="modal-card">
+      <img src="assets/images/profile-1.jpg" alt="Foto Profil Penuh" class="modal-img" id="modal-img">
+      <div class="modal-footer">
+        <a href="https://www.instagram.com/p/DfPTfozBvj5/?psln=MW41cXVqa3A5NW1sYg==" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-ig-link">
+          Lihat di Instagram
+        </a>
+        <button class="modal-close-btn" id="modal-close">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toast-msg">Pesan tersalin</span>
+  </div>
+
+  <!-- Back To Top Floating Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
