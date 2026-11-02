@@ -32,6 +32,3 @@ Sebagai bagian dari unjuk kompetensi, portfolio ini dan proyek-proyek terkait di
 * **Fungsi Utama:** Manajemen alur kerja, pencatatan status perbaikan perangkat seluler, transparansi waktu tunggu, dan efisiensi operasional harian.
 * **Tantangan Teknis:** Memastikan struktur relasi tabel di MySQL selaras dengan dinamika operasional lapangan yang kompleks.
 * **Solusi:** Menerapkan *deep requirement analysis* dan merancang struktur database relasional yang fleksibel serta minim redundansi menggunakan migrasi Laravel 11.
-   ```bash
-   git clone [https://github.com/devtria/devtria-portfolio.git](https://github.com/devtria/devtria-portfolio.git)
-   cd devtria-portfolio
